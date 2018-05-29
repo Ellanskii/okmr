@@ -151,3 +151,28 @@
         background-size: 50%;
     }
 }
+
+/*меню после скролла*/
+.has-fixed-menu {
+    padding-top: 60px
+}
+.has-fixed-menu .main-header {
+    z-index: 100;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.main-header--scrolled .main-header__logo img {
+    height: 50px;
+}
+.main-header--scrolled .main-header__nav {
+    padding-top: 12px;
+}
+.main-header--scrolled .main-header__right {
+    padding-top: 8px;
+}
+.main-header, .main-header__logo img, .main-header__nav, .main-header__right {
+    transition: all .5s;
+}
