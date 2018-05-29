@@ -1,0 +1,153 @@
+/*пятиколоночная сетка*/
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+/*типографика*/
+.text-centered {
+    text-align: center;
+}
+.advina h1 {
+    font-size: 35px;
+    margin: 1.5em 0;
+}
+.advina h2 {
+    font-size: 30px;
+}
+.advina p {
+    font-size: 20px;
+}
+.advina img {
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .container.advina:not(:last-of-type) {
+        border-bottom: 1px solid lightgrey;
+        margin-bottom: 79px;
+        padding-bottom: 79px;
+    }
+}
+
+/*о нас*/
+.about-header .row{
+    background: url('../img/delivery.png') top right no-repeat;
+    background-size: 50%;
+}
+.about-header h1 {
+    padding-right: 20%;
+    padding-bottom: 30%;
+    margin-top: 0;
+}
+.deliverybg {
+    width: 100%;
+}
+.bored {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.bored h1 {
+    margin-top: 0;
+}
+
+@media (max-width: 1024px) {
+    .about-header h1 {
+        padding-right: 20%;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .about-header .row {
+        background: none;
+    }
+}
+
+/*доставка и оплата*/
+.payment-image {
+    margin-top: 3em;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.payment-image--yellow {
+    background-image: url('../img/yellowhand.png');
+}
+.payment-image--blue {
+    background-image: url('../img/bluehand.png');
+}
+.payment-image--red {
+    background-image: url('../img/redhand.png');
+}
+.delivery-image {
+    width: 100%;
+    height: 185px;
+    object-fit: contain;
+    -o-object-fit: contain;
+    object-position: 50% 100%;
+    -o-object-position: 50% 100%;
+}
+
+/*Контакты*/
+.contacts-blue {
+    background: #308bff;
+}
+.contacts-blue .container {
+    background: url('../img/contactsbg.jpg') no-repeat center right;
+    background-size: contain;
+    padding: 2em 15px;
+}
+.contacts-blue h1 {
+    text-transform: uppercase;
+    margin: 0.67em 0;
+}
+.contacts-blue h1, .contacts-blue p{
+    width: 511px;
+    max-width: 100%;
+    color: white;
+}
+.additional-contacts {
+    padding: 30px 15px;
+    margin-bottom: 2em;
+    background: url('../img/hours.png') no-repeat center right;
+    background-size: contain;
+}
+@media (max-width: 768px) {
+    .contacts-blue .container {
+        background: linear-gradient(to left top, rgba(48, 139, 255, 0.6), rgba(48, 139, 255, 0.6)), url('../img/contactsbg.jpg') no-repeat 150px ;
+        background-size: 100%, 120%;
+    }
+    .additional-contacts {
+        background-size: 50%;
+    }
+}
