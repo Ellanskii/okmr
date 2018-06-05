@@ -98,6 +98,11 @@ html
 
                 $window.on('scroll', function () {
                     var scrollTop = $window.scrollTop();
-                    nav.toggleClass('main-header--scrolled', scrollTop > prev);
+
+                    if (scrollTop === 0) {
+                        nav.removeClass('main-header--scrolled')
+                    } else {
+                        nav.addClass('main-header--scrolled', scrollTop > prev);
+                    }
                     prev = scrollTop;
                 });
